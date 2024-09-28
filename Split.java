@@ -53,3 +53,69 @@ public class Split {
         return null;
     }
 }
+
+
+
+/*
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt user to enter ISBN
+        System.out.print("Enter ISBN: ");
+        String isbn = scanner.nextLine();
+        
+        // Initialize variables to hold each part
+        String gsiPrefix = "";
+        String groupIdentifier = "";
+        String publisherCode = "";
+        String itemNumber = "";
+        String checkDigit = "";
+        
+        int group = 0;  // To track which group we are currently processing
+        
+        for (int i = 0; i < isbn.length(); i++) {
+            char ch = isbn.charAt(i);
+            
+            if (ch == '-') {
+                group++;  // Move to the next group
+                continue;  // Skip the dash
+            }
+            
+            // Based on the current group, append the character to the appropriate variable
+            switch (group) {
+                case 0:
+                    gsiPrefix += ch;  // Concatenate characters for GSI Prefix
+                    break;
+                case 1:
+                    groupIdentifier += ch;  // Concatenate characters for Group Identifier
+                    break;
+                case 2:
+                    publisherCode += ch;  // Concatenate characters for Publisher Code
+                    break;
+                case 3:
+                    itemNumber += ch;  // Concatenate characters for Item Number
+                    break;
+                case 4:
+                    checkDigit += ch;  // Concatenate characters for Check Digit
+                    break;
+                default:
+                    System.out.println("Invalid ISBN format.");
+                    return;  // Exit if more than 5 groups are found
+            }
+        }
+        
+        // Display the breakdown of the ISBN
+        System.out.println("GSI Prefix: " + gsiPrefix);
+        System.out.println("Group Identifier: " + groupIdentifier);
+        System.out.println("Publisher Code: " + publisherCode);
+        System.out.println("Item Number: " + itemNumber);
+        System.out.println("Check Digit: " + checkDigit);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
+*/

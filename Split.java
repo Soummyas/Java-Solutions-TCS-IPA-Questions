@@ -119,3 +119,19 @@ public class Main {
     }
 }
 */
+
+/* Much simpler one
+public class Main
+{
+	public static void main(String[] args) {
+		
+		String str = "978-0-13-110362-8";
+        String[] parts = str.split("-");
+        System.out.println("The split parts are:");
+          for(int i = 0; i < parts.length; i++) { 
+              System.out.println(parts[i] + " "); 
+              
+          }
+	}
+}
+*/

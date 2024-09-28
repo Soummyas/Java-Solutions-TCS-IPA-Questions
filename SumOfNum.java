@@ -10,7 +10,7 @@
  * --------------
  * 2131
  */
-
+//https://chatgpt.com/share/66f8332f-8840-8006-84cb-4f239a59a7b3
 import java.util.*;
 public class SumOfNum 
 {

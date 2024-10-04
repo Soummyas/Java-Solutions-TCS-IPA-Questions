@@ -18,3 +18,28 @@ public class Smallest_Character {
         System.out.println(c);
     }
 }
+
+
+
+
+
+
+
+/*
+import java.util.*;
+
+public class Main{
+    public static void main(String args[]){
+        Scanner sc  = new Scanner (System.in);
+        char smallest = 'z';
+        String str = "arjit";
+    
+        for (int i = 0; i<str.length(); i++){
+            if(str.charAt(i) < smallest){
+                smallest = str.charAt(i);
+            }
+        }
+        System.out.println(smallest);
+    }
+}
+*/

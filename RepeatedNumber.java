@@ -20,3 +20,25 @@ public class RepeatedNumber {
         }
     }
 }
+/*
+
+public class Main
+{
+	public static void main(String[] args) {
+		String str = "a4b3c1";
+		String temp = "";
+		for (int i = 0; i<str.length(); i++){
+		    if(Character.isAlphabetic(str.charAt(i))){
+		        temp += str.charAt(i);
+		    }
+		    else if(Character.isDigit(str.charAt(i))){
+		        int x = Integer.parseInt(String.valueOf(str.charAt(i)));
+		        for(int j = 1; j<x; j++){
+		            temp+=str.charAt(i - 1);
+		        }
+		    }
+		}
+		System.out.println(temp);
+	}
+}
+*/

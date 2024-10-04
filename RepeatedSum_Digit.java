@@ -39,3 +39,29 @@ public class RepeatedSum_Digit
         return sum;
     } 
 }
+
+/*
+
+public class Main
+{
+    public static int Sum(int n){
+        int sum = 0;
+        
+    while(n != 0){
+        int ld = n%10;
+        sum+=ld;
+        n/=10;
+       }
+    if(sum > 9) return Sum(sum);
+    
+    return sum;
+    }
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int n = 195;
+		
+		System.out.println(Sum(n));
+	}
+}
+
+*/

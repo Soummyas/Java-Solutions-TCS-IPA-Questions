@@ -25,3 +25,49 @@ public class Armstrong {
         }
     }
 }
+
+
+
+/*
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+    public static boolean isAmstrong(int n){
+        int x = n; 
+        int sum = 0;
+        int count = 0; //to count the num length to use in power function
+        
+        //calculate num length
+        while(n!=0){
+            n=n/10;
+            count ++;
+        }
+       n = x;
+        
+        while(x!=0){
+            int ld = x%10;
+            sum+=Math.pow(ld,count);
+            x/=10;
+        }
+        
+        
+        if(sum == n) return true;
+        
+        
+        return false;
+        
+    }
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int n = 153;
+	System.out.println(isAmstrong(n));
+	}
+}
+*/

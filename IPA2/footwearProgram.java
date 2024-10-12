@@ -100,18 +100,6 @@ public static Footwear getSecondHighestPriceByBrand(Footwear[] f, String n) {
         else{
             System.out.println("Brand not available");
         }
-
-        // Footwear obj = getSecondHighestPriceByBrand(f,n);
-		// if(obj!=null)
-		// {
-		// 	System.out.println(obj.getId());
-		// 	System.out.println(obj.getName());
-		// 	System.out.println(obj.getPrice());
-		// }
-		// else
-		// {
-		// 	System.out.println("Brand not available");
-		// }
         sc.close();
 
     }

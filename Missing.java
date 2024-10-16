@@ -2,6 +2,28 @@
  *Input : 1 2 4 8 9 11 12 14
  *Output : 3 5 6 7 10 13
 */
+/*
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int arr[] = {1 ,2, 4, 8, 9, 11, 12, 14};
+		Arrays.sort(arr);
+		 int curr = 0;
+		for(int i = arr[0]; i <= arr[arr.length - 1]; i++){
+		 
+		  if(arr[curr] == i){
+		      curr++;
+		  }
+		  else{
+		      System.out.print(i + " ");
+		  }
+		   
+		}
+	}
+}
+*/
 
 import java.util.*;
 public class Missing {

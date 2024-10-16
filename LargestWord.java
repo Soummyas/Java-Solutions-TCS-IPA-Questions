@@ -13,7 +13,7 @@ public class LargestWord {
         String [] arr = str.split(" ");
         int n = arr[0].length();
         for(int i = 0; i<arr.length; i++){
-            if(arr[i].length() > n){
+            if(arr[i].length() >= n){
                 ans = arr[i];
                 n = arr[i].length();
             }

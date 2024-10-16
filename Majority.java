@@ -6,42 +6,25 @@ package JAVA;
 
 
 /*
-import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-		int arr[] = {2,2,2,2,2,2,3,3,4,4,4,4,3,3,4,2};
-		Arrays.sort(arr);
-		int n = arr.length;
-		int count = 1;
-		int max = 0;
-		int maxNum = 0;
-		for (int i = 1; i<n; i++) {
-			int prev = arr[i - 1];
-			int curr = arr[i];
 
-			if(prev == curr) {
-				count++;
-			}
-			else {
-   //occurance of every element
-				System.out.println("Count of "+ prev + " is : "+ count);
-				count = 1;
-			}
-   //counting max
-			if(count > max) {
-				max = count;
-				maxNum = prev;
-			}
+int arr[] = {3, 3, 4, 2, 4, 4, 2, 4, 4};
+        int n = arr.length;
+        int threshold = n / 2;
+        int count = 1;
 
+        Arrays.sort(arr);
+        for (int i = 1; i < n; i++) {
+            if (arr[i] == arr[i - 1]) {
+                count++;
+            } else {
+                count = 1;
+            }
 
-		}
-  //explicitly printing last element as loop is from 1 to n only
-		 System.out.println("Count of " + arr[n - 1] + " is : " + count);
-		System.out.println("Count of Max num " + maxNum + " is: " + max);
-	}
-}
-
+            if (count > threshold) {
+                System.out.println("Majority element is: " + arr[i]);
+            
+            }
+        }
 */
 
 

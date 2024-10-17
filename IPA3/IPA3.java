@@ -1,3 +1,110 @@
+/*
+import java.util.*;
+
+class Student{
+    private int roll;
+    private String name;
+    private String branch;
+    private double score;
+    private boolean dayScholar;
+
+    public Student(int roll, String name, String branch, double score, boolean dayScholar){
+        this.roll=roll;
+        this.name = name;
+        this.branch = branch;
+        this.score = score;
+        this.dayScholar  =dayScholar;
+    }
+    //getter
+    public int getRoll(){
+        return this.roll;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public String getBranch(){
+        return this.branch;
+    }
+    public double getScore(){
+        return this.score;
+    }
+    public boolean getDayScholar(){
+        return this.dayScholar;
+    }
+
+
+}
+public class StudentMain {
+    public static int findCountOfDayscholarStudents(Student [] s){
+        int count = 0;
+        for(int i = 0; i <s.length; i++){
+            if(s[i].getScore() > 80  && s[i].getDayScholar() == true){
+                count++;
+            }
+        }
+        return count;
+    }
+    public static Student findStudentwithSecondHighestScore(Student []s){
+       //finding max form not dayscholars
+        double max= 0;
+        for(int i = 0; i<s.length; i++){
+            if(s[i].getDayScholar() == false){
+                if(max < s[i].getScore()){
+                    max = s[i].getScore();
+                }
+            }
+        }
+        double secondMax = 0;
+        // finding second max from non day scolars
+        for(int i = 0; i<s.length; i++){
+            if(s[i].getDayScholar() == false){
+                if( max > s[i].getScore() && secondMax < s[i].getScore()){
+                   secondMax = s[i].getScore();
+                }
+            }
+        }
+
+        //searching that value of second max and returning it
+        for(int i = 0; i<s.length; i++){
+            if(secondMax == s[i].getScore()){
+               return s[i];
+            }
+        }
+        
+        
+        return null;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Student s [] = new Student[4];
+        for(int i = 0; i<s.length; i++){
+            int a = sc.nextInt();sc.nextLine();
+            String b = sc.nextLine();
+            String c = sc.nextLine();
+            double d = sc.nextDouble();sc.nextLine();
+            boolean e = sc.nextBoolean(); sc.nextLine();
+            s[i] = new Student(a,b,c,d,e);
+        }
+        int ans1 = findCountOfDayscholarStudents(s);
+        Student ans2 = findStudentwithSecondHighestScore(s);
+        
+        if(ans1 > 0){
+            System.out.println(ans1);
+        }
+        else{
+            System.out.println("There are no such dayscholar students");
+        }
+        if(ans2 !=null){
+            System.out.println(ans2.getRoll()+"#"+ans2.getName()+"#"+ans2.getScore());
+        }
+        else{
+            System.out.println("There are no student from non day scholar");
+        }
+    }
+}
+
+*/
+
 package IPA3;
 import java.util.*;
 public class IPA3 {

@@ -9,7 +9,23 @@
     r: 1
     d: 1
 */
+/*
+	String str = " Hello World".replace(" ", "");
+		char ch [] = str.toCharArray();
+		Arrays.sort(ch);
+		int count = 1;
+	    for (int i = 0; i<ch.length; i++){
+		    char current = ch[i];
+		        if(i < ch.length - 1 && ch[i + 1] == current){
+		            count++;
+		        }
+		        else{
+		            System.out.println(current + " "+ count);
+		            count = 1;
+		        }
+		}
 
+*/
 import java.util.*;
 public class Occurance {
     public static void main(String[] args) {

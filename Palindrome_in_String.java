@@ -11,7 +11,42 @@
  * malayalam
  * 3
  */
+/*
 
+import java.util.Arrays;
+
+public class Palindrome_in_String {
+
+    public static boolean isPalindrome(String str){
+       String temp = "";
+       for (int i = 0; i < str.length(); i++) {
+          temp  = str.charAt(i) + temp;
+       }
+        if(str.equals(temp)) return true;
+        return false;
+    }
+    public static void main(String[] args) {
+        String str = "My name is nitin and I can speak malayalam";
+        String arr [] = str.split(" ");
+       String [] ans = new String [0];
+        for (int i = 0; i < arr.length; i++) {
+          if(isPalindrome(arr[i])){
+            ans = Arrays.copyOf(ans , ans.length + 1);
+            ans[ ans.length - 1] = arr[i];
+          }
+           
+       }
+       for (int i = 0; i < ans.length; i++) {
+        System.out.println(ans[i]);
+        }
+        System.out.println(ans.length);
+       
+       
+        
+    }
+}
+
+*/
 import java.util.*;
 public class Palindrome_in_String
 {

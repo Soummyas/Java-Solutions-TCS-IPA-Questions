@@ -16,6 +16,30 @@
  * Factors of 8 = 1,2,4, but 1+2+4 = 7 not equal to 8.
  */
 
+/*
+int n = 8;
+	int fact [] = new int[0];
+	
+	for(int i = 1; i<=n/2; i++){
+	    if(n % i == 0){
+	        fact = Arrays.copyOf(fact, fact.length  + 1);
+	        fact [fact. length - 1] = i;
+	    }
+	    
+	}
+	    int sum = 0;
+	    for(int i = 0; i<fact.length; i++){
+	   //  System.out.println(fact[i]);
+	      sum+=fact[i];
+	    }
+        if(sum == n) {
+            System.out.println("Perfect num");
+        }
+        else{
+              System.out.println("Not a Perfect num");
+        }
+*/
+
 import java.util.*;
 public class PerfectNumber {
     public static void main(String[] args) {

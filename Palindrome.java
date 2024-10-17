@@ -5,7 +5,25 @@
  * Input: Papa
  * Output: None
  */
+/*
+public class Palindrome {
+ public static void main(String[] args) {
+     //rev == or ori then palindrome
+    String str = "pop";
+    String temp = "";
+    for(int i = 0; i< str.length(); i++){
+        temp = str.charAt(i) + temp;
+    }
+   if(str.equals(temp))
+        System.out.println("Palindrome");
+        else{
+            System.out.println("Not");
+        }
+    
 
+ }   
+}
+*/
 import java.util.*;
 public class Palindrome {
     public static void main(String[] args) {

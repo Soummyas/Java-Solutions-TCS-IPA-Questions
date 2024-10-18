@@ -5,7 +5,26 @@
  * Input: abbcddeff
  * Output: abcdef
  */
+/*
 
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		String str = "abbbccddeefffa";
+		char ch = '\0';
+		String ans = "";
+		for (int i = 0; i<str.length(); i++){
+		    if(str.charAt(i) != ch){
+		        ch = str.charAt(i);
+		        ans += ch;
+		    }
+		}
+		System.out.print(ans);
+		
+	}
+}
+*/
 import java.util.*;
 public class Remove2ConsecutiveLetter 
 {

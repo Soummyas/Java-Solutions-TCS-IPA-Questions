@@ -1,5 +1,22 @@
 //a2b3c1 = aabbbc
+/*
 
+public class Main
+{
+	public static void main(String[] args) {
+	    String str = "a5b3c1";
+		for (int i  = 0; i<str.length(); i++) {
+		   if(Character.isDigit(str.charAt(i))){
+		        int x = Integer.parseInt(Character.toString(str.charAt(i)));
+		        for(int j = 0; j < x; j++){
+		            System.out.print(str.charAt(i - 1));
+		        }
+		    }
+		   
+		}
+	}
+}
+*/
 import java.util.*;
 public class RepeatedNumber {
     public static void main(String[] args) {

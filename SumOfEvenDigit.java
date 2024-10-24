@@ -27,3 +27,23 @@ public class SumOfEvenDigit {
         System.out.println("The sum of even digit : "+sum);
     }
 }
+
+
+
+// package smallCodes;
+
+// public class SumOfEvenDigit {
+//     public static void main(String[] args) {
+//     int sum = 0;
+//     String n = "9081726354";
+//     for(int i = n.length() - 1; i>=0 ; i--){
+//         int ld = Integer.parseInt(Character.toString(n.charAt(i)));
+//             if(ld % 2 == 0){
+//                 sum+=ld;
+//             }
+//     }
+//     System.out.println(sum);
+
+//     }
+// }
+

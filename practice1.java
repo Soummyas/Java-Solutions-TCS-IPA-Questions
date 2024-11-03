@@ -1,4 +1,6 @@
 /*
+https://chatgpt.com/share/67270fab-9008-8008-86d5-d9527cb40e5d
+
 https://github.com/GhoshAgniva/TCS-NQT-QUESTIONS
 
 An automobile company manufactures both a two wheeler (TW) and a four wheeler (FW). 

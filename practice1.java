@@ -24,6 +24,66 @@ each separated by a single space character(see the example) Additional messages 
 
 */
 
+/*
+To understand the logic for calculating `FW` (the number of four-wheelers) in this problem, let's break down the relationship between `v` (total vehicles) and `w` (total wheels):
+
+1. **Set Up the Problem**:  
+   - Let `TW` represent the number of two-wheelers.
+   - Let `FW` represent the number of four-wheelers.
+   - Since `v` is the total number of vehicles, we know that:
+     \[
+     TW + FW = v
+     \]
+
+2. **Relate Wheels to Vehicle Types**:  
+   - Each two-wheeler has 2 wheels, so two-wheelers contribute \( 2 \times TW \) wheels.
+   - Each four-wheeler has 4 wheels, so four-wheelers contribute \( 4 \times FW \) wheels.
+   - The total number of wheels (`w`) is therefore:
+     \[
+     2 \times TW + 4 \times FW = w
+     \]
+
+3. **Isolate `FW`**:  
+   To solve for `FW`, we use these two equations:
+   - \( TW + FW = v \)
+   - \( 2 \times TW + 4 \times FW = w \)
+
+   Substitute \( TW = v - FW \) from the first equation into the second equation:
+   \[
+   2 \times (v - FW) + 4 \times FW = w
+   \]
+   Expanding and simplifying:
+   \[
+   2v - 2FW + 4FW = w
+   \]
+   \[
+   2FW = w - 2v
+   \]
+   \[
+   FW = \frac{w - 2v}{2}
+   \]
+
+4. **Use `FW` to Find `TW`**:  
+   After calculating `FW`, you can substitute back to find `TW` as:
+   \[
+   TW = v - FW
+   \]
+
+### Example Walkthrough:
+If `v = 200` and `w = 540`:
+1. Calculate `FW`:
+   \[
+   FW = \frac{540 - 2 \times 200}{2} = \frac{540 - 400}{2} = \frac{140}{2} = 70
+   \]
+2. Calculate `TW`:
+   \[
+   TW = 200 - 70 = 130
+   \]
+
+So, there would be 130 two-wheelers and 70 four-wheelers, which satisfies the conditions given.
+*/
+
+
 import java.util.*;
 public class practice1 
 {

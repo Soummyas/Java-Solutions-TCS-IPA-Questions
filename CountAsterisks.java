@@ -1,3 +1,4 @@
+// https://chatgpt.com/share/67272b04-0ae4-8006-8473-5616e2f8057f
 import java.util.*;
 public class practice2
 {

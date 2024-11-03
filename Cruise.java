@@ -1,3 +1,40 @@
+// https://prepinsta.com/tcs-coding-questions/question-5/
+
+/*
+public class  Cruise
+{
+	public static void main(String[] args) {
+		int curG = 0;
+		int maxG = 0;
+		int maxhour = 0;
+		int curhour = 0;
+		
+// 		int T = 5;
+// 		int [] E = {7,0,5,1,3 };
+// 		int [] L = {1,2,1,3,4};
+	
+		int T = 4 ;
+		int [] E = {3,5,2,0};
+		int [] L = {0,2,4,4};
+		
+		if(1 <=T && T <= 25){
+		for(int  i  = 0; i <T ; i++){
+		    curhour ++;	 // 1 2 
+		    curG += E[i] - L[i]; // 3 
+		         if(maxG < curG){ 
+    		        maxG = curG;
+    		        maxhour = curhour;
+		        }
+		}
+		System.out.println(maxG);
+			System.out.println(maxhour );
+		}
+		
+		
+	}
+}
+
+*/
 import java.util.*;
 public class practice3
 {
